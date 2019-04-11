@@ -3,8 +3,8 @@
 This lab utilizes the socket.io and socket.io-client modules to listen and emit events based on application functions. The events are sent from app.js, heard by the server.js, and further emitted to other connected sockets.
 
 ## Links and Resources
-- [Github Repo](https://github.com/401-advanced-javascript-1/lab-13-bearerAuth/tree/submission)
-- [Travis](https://www.travis-ci.com/401-advanced-javascript-1/lab-13-bearerAuth)
+- [Github Repo](https://github.com/401-advanced-javascript-1/lab-18-socketio/tree/submission)
+- [Travis](https://www.travis-ci.com/401-advanced-javascript-1/lab-18-socketio)
 
 # Modules
 - app.js: contains functionality for read/update/write files
