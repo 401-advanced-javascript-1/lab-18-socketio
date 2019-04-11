@@ -18,9 +18,9 @@ const alterFile = (file) => {
   return read(file)
     .then(buffer => convert(buffer))
     .then(buffer => write(file, buffer))
-    .then( () => socket.emit('file-saved', `${file} was saved!`))
+    .then( () => socket.emit('file-saved', `${file} was saved!`) && socket.disconnect())
     .catch(error => socket.emit('file-error', error.message));
 };
 
 let file = process.argv.slice(2).shift();
-alterFile(file).then(() => socket.close());
+alterFile(file);

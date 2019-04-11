@@ -6,6 +6,7 @@ io.on('connection', (socket) => {
   console.log('CONNECTED', socket.id);
 
   socket.on('file-saved', payload => {
+    console.log('FILE SAEVED');
     io.emit('file-saved', payload);
   });
 

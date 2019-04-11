@@ -6,9 +6,9 @@ const PORT = 3333;
 const socket = io.connect(`http://localhost:${PORT}`);
 
 socket.on('file-saved', payload => {
-  console.log(payload);
+  console.log('Saved:', payload);
 });
 
 socket.on('file-error', payload => {
-  console.log(payload);
+  console.log('Error:', payload);
 });
