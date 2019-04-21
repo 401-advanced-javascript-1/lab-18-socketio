@@ -11,8 +11,11 @@ io.on('connection', (socket) => {
   });
 
   socket.on('file-error', payload => {
-    console.log('fILE ERROR!');
     io.emit('file-error', payload);
   });
 
+  socket.on('close', (socket) => {
+    console.log('Goodbye, ', socket.id);
+  });
 });
+
